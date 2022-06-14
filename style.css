@@ -1,0 +1,30 @@
+﻿h1{
+    color:chartreuse;
+    background-color:hotpink;
+}
+p {
+    height: 200px;
+    color: #ff0000;
+    background-color:cadetblue;
+}
+#para1 {
+    height: 200px;
+    
+    color: #ff0000;
+    background-color: cadetblue;
+}
+#para2{
+    height: 200px;
+    color: #ff0000;
+    background-color: darkblue;
+}
+p{
+    text-align:center;
+}
+.commonfont{
+    font-family:'Bodoni MT Poster';
+}
+
+ 
+    
+     
