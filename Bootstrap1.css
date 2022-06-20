@@ -1,0 +1,32 @@
+﻿.content .card {
+    width: 97% !important;
+    border: none;
+    box-shadow: 4px 4px 4px royalblue;
+    padding-right: 15px !important;
+}
+.footer {
+    position: relative;
+    top: 26px;
+    height: 154px;
+    background-color:honeydew;
+}
+}
+.fa-twitter  {
+    color: #2E86C1;
+}
+.fa-facebook-official {
+    color: #2E86C1;
+    
+}
+.fa-instagram {
+    color: #ff0000;
+}
+
+
+img{
+    width:100%;
+}
+
+  .form-control{
+      width:50%;
+  }
