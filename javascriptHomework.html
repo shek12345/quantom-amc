@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    Enter Name :<input type="text" id="t1" />
+
+    <input type="button" value="Add Last" onclick="addname()" />
+
+    <input type="button" value="Add First" onclick="addfirst()" />
+
+    <div id="d1"></div>
+
+    <script>
+
+        var names = ["tushar", "vivek"];
+
+        function display() {
+
+            var data = "<ol>";
+
+            for (var i = 0; i < names.length; i++) {
+
+                data += "<li>" + names[i] + "</li>";
+
+            }
+
+            data += "</ol>";
+
+            document.getElementById("d1").innerHTML = data;
+
+        }
+
+
+        display();
+
+
+        function addname() {
+
+            var name = document.getElementById("t1").value;
+
+            names.push(name);
+
+            display();
+
+        }
+
+        function addfirst() {
+
+            var name = document.getElementById("t1").value;
+
+            names.unshift(name);
+
+            display();
+
+        }
+
+    </script>
+
+
+</body>
+
+
+</html>

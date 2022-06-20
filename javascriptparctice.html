@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        /*Modal dialog boxes in javascript
+
+        Alert - to display msg to the user
+        Confirm - to take confirmation from the user based on either yes / no =exe code*/
+
+        function display() {
+            // alert("Hello to all")
+            var result = confirm("Do you want to pay 500");
+            if (result == true) {
+                //execute code related payment
+                alert("paid successfully");
+            }
+            else {
+                alert("Sorry! you stopped the transaction");
+            }
+        }
+        display();
+        
+
+            // call back function in javascript
+
+            // when you will receive data / response from the server, till you have to wait
+
+            //1. setTimeOut()  2. setInterval()
+
+
+            function display() {
+
+                document.getElementById("d1").innerHTML = "Hello to all";
+
+            }
+
+
+            //display();
+
+            setTimeout(display, 3000); // 3000ms -> 3sec
+
+
+            function showTime() {
+
+                let d = new Date();
+
+            data = d.getHours() + ": " + d.getMinutes() + ": " + d.getSeconds();
+
+            document.getElementById("d2").innerHTML = data;
+
+            }
+
+            //showTime();
+
+        setInterval(showTime, 5000);
+
+
+       /* Scope in Javascript:
+
+        Global scope
+        Function
+        Block*/
+
+        Var, let, const
+
+        "use strict"
+
+        // global scope
+
+        var a = 100;
+
+        const b = 20;
+
+
+        {
+
+            let a = 10;  // a is now block scope
+
+            var c = 200;  // c is a global scope
+
+            console.log(a);
+
+        }
+
+
+        var a = 300;
+
+        console.log(a);
+
+        // b = "Hello";
+
+        console.log(b);
+
+        function test() {
+
+            var name = "pune"; //funtion scope
+
+            let d = 400;  // function scope
+
+            console.log(b);
+
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
